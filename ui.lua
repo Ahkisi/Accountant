@@ -77,7 +77,7 @@ local function createEdit(id, parent, text, x, y)
     -- field.style:SetColor(0, 0, 0, 1)
     field.style:SetAlign(ALIGN.LEFT)
     -- field:SetDigit(true)
-    field:SetInitVal(text)
+    field:SetInitVal(tonumber(text) or 0)
     field:SetMaxTextLength(4)
     return field
 end
